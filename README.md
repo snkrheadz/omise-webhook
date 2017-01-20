@@ -7,6 +7,9 @@ This is a simple Sinatra app created for Omise Webhook local test with ngrok.
 - ruby : version 2.3.1
 - bundler
 - ngrok
+- Omise Ruby Client
+- Omise Test Secret Key
+- .env
 
 ## Getting started
 
@@ -27,6 +30,13 @@ bundle install --path vendor/bundle
 ```shell
 brew install ngrok
 ```
+
+4: Create `.env` file and edit with your omise test secret key, you can get your test secret key from https://dashboard.omise.co/test/api-keys
+
+```
+OMISE_TEST_SECRET_KEY=skey_test_xxxREPLACE_THIS_KEY_WITH_YOURS
+```
+
 
 ## Start application
 
@@ -58,7 +68,7 @@ Yes, this sinatra app will create json files with the request body when it recei
 
 ### Versioning
 
-Semantic Versioning 0.1.0 as defined at [http://semver.org](http://semver.org).
+Semantic Versioning 0.1.1 as defined at [http://semver.org](http://semver.org).
 
 ### License
 

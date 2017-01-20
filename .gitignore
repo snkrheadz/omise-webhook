@@ -13,6 +13,9 @@
 # Ignore all api log files
 /log
 
+# Ignore env file
+.env
+
 # Ignore stuff that should be put in global gitignore.
 *.db
 *.rdb
