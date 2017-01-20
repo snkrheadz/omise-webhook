@@ -31,6 +31,8 @@ post "/omise/webhook", provides: :json do
   File.open(filepath, "w") do |f|
     f.puts JSON.pretty_generate(event.as_json)
   end
+
+  status 200
 end
 
 get "*" do

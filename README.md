@@ -68,7 +68,7 @@ Yes, this sinatra app will create json files with the request body when it recei
 
 ### Versioning
 
-Semantic Versioning 0.1.1 as defined at [http://semver.org](http://semver.org).
+Semantic Versioning 0.1.2 as defined at [http://semver.org](http://semver.org).
 
 ### License
 
