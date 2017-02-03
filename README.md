@@ -28,15 +28,14 @@ bundle install --path vendor/bundle
 3: Install [ngrok](https://ngrok.com/) over homebrew
 
 ```shell
-brew install ngrok
+brew cask install ngrok
 ```
 
-4: Create `.env` file and edit with your omise test secret key, you can get your test secret key from https://dashboard.omise.co/test/api-keys
+4: Create `.env` file and edit with your omise test secret key, you can get your test secret key from <https://dashboard.omise.co/test/api-keys>
 
 ```
 OMISE_TEST_SECRET_KEY=skey_test_xxxREPLACE_THIS_KEY_WITH_YOURS
 ```
-
 
 ## Start application
 
@@ -56,7 +55,7 @@ And then open your favorite web browser to open [Omise Webhook Endpoint Edit pag
 
 And edit that webhook endpoint with the url issued by ngrok for forwarding to your localhost:3000 which is displayed in your window like `https://THIS_IS_UID.ngrok.io` and `/omise/webhook` .
 
-e.g. ENDPOINT:  `https://THIS_IS_UID.ngrok.io/omise/webhook`
+e.g. ENDPOINT: `https://THIS_IS_UID.ngrok.io/omise/webhook`
 
 ## Logs?
 
@@ -68,7 +67,7 @@ Yes, this sinatra app will create json files with the request body when it recei
 
 ### Versioning
 
-Semantic Versioning 0.1.2 as defined at [http://semver.org](http://semver.org).
+Semantic Versioning 0.1.2 as defined at <http://semver.org>.
 
 ### License
 
